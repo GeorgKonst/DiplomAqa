@@ -1,10 +1,10 @@
 package ru.netology.test;
 
 import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.logevents.SelenideLogger;
+import io.qameta.allure.selenide.AllureSelenide;
 import lombok.val;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.Nested;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import ru.netology.data.DataHelper;
 import ru.netology.data.SQLHelper;
 import ru.netology.page.StartPage;
@@ -24,6 +24,17 @@ public class DebitCardTest {
     public void cleanTables() {
         SQLHelper.cleanData();
     }
+
+    @BeforeAll
+    static void setupAll() {
+        SelenideLogger.addListener("allure", new AllureSelenide());
+    }
+
+    @AfterAll
+    static void tearDownAll() {
+        SelenideLogger.removeListener("allure");
+    }
+
 
     @Nested
     public class ValidTest {

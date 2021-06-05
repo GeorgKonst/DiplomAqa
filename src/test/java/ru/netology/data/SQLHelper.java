@@ -13,9 +13,9 @@ import java.sql.SQLException;
 import static org.junit.jupiter.api.Assertions.assertNull;
 
 public class SQLHelper {
-    private static String url = "jdbc:postgresql://localhost:5432/app";
-    private static String user = "app";
-    private static String password = "pass";
+    private static String url = System.getProperty("test.dburl");
+    private static String user = System.getProperty("test.dblogin");
+    private static String password = System.getProperty("test.dbpassword");
 
     private SQLHelper() {}
 
