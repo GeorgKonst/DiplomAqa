@@ -14,7 +14,7 @@
 
 ### Отчетные документы по итогам автоматизации:
 
-Тут будет ссылка
+[Summary.md](https://github.com/GeorgKonst/DiplomAqa/blob/master/docs/Summary.md)
 
 
 ### Запуск приложения:
