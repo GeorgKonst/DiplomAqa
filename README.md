@@ -9,7 +9,7 @@
 
 ### Отчетные документы по итогам тестирования:
 
-Тут будет ссылка
+[Report.md](https://github.com/GeorgKonst/DiplomAqa/blob/master/docs/Report.md)
 
 
 ### Отчетные документы по итогам автоматизации:
