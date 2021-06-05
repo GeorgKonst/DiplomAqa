@@ -28,7 +28,7 @@
 
 ### Отчет по результатам тестирования
 
-ссылка
+[Allure](https://github.com/GeorgKonst/DiplomAqa/issues/1)
 
 ### Общие рекомендации
 
